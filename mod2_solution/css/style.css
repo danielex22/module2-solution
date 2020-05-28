@@ -99,7 +99,7 @@ body, html{margin: 0; padding: 0;}
   }
 
   .footer{
-    bottom: 0px;
+    bottom: -200px;
     height: 3%;
   }
 
