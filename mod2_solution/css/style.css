@@ -1,0 +1,121 @@
+body, html{margin: 0; padding: 0;}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-top: 50px;
+}
+
+.header__title{
+  font-size: 35px;
+  font-family: 'Chelsea Market', cursive;
+}
+
+.container{
+
+  max-width: 100%;
+  margin-top: 60px;
+}
+
+.container__box{
+
+  position: relative;
+  width: 31.3%;
+  margin:1%;
+  height: 200px;
+  background: #635237;
+  float: left;
+}
+
+.container__box__text{
+  position: absolute;
+  font-family: 'Chelsea Market', cursive;
+  bottom: 20px;
+  top: 50px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container__box__type{
+  border: 1px solid black;
+  height: 30px;
+  width: 130px;
+  position:absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Chelsea Market', cursive;
+}
+
+.container__box__text-chicken{
+  background-color: #E9967A;
+  color: black;
+}
+
+.container__box__text-beef{
+  background-color: #A52A2A;
+  color: white;
+}
+
+.container__box__type-sushi{
+  background-color: #F0E68C;
+}
+
+.footer{
+  position: absolute;
+  bottom:0px;
+  border: 1px solid black;
+  width: 100%;
+  height: 4%;
+  background-color: #635237;
+
+}
+
+
+
+
+@media (min-width:768px) and (max-width: 991px) {
+  .container__box{
+    width: 46%;
+    margin: 2%;
+    display: flex;
+  }
+  .container__box3{
+    width: 96%;
+    margin: 0 2%;
+  }
+}
+
+@media (max-width:767px){
+  .container__box{
+    width: 96%;
+    margin: 2%;
+  }
+
+  .footer{
+    bottom: -160px;
+    height: 3%;
+  }
+
+}
+
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
